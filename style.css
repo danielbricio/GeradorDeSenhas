@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;1,100;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+}
+
+.wrapper{
+    
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 1rem;
+}
+
+.wrapper h2{
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#result{
+    border: 1px solid rgb(32, 90, 197);
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 1rem;
+    outline: none;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 1rem;
+    background-color: #d1d1d1;
+    color: rgb(32, 90, 197);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+input[type="number"] {
+    width: 98px;
+    height: 50px;
+    border: 1px solid rgb(32, 90, 197);
+    background-color: #d1d1d1;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 10px;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 23px;
+    background: rgb(32, 90, 197);
+    border: 1px solid rgb(126, 126, 126);
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.btn--green {
+  transition: 0.3s;
+  background-color: #1cb15b;
+}
+
+.btn--green:hover {
+  background-color: #0c5229;
+}
+
+.btn--blue {
+  transition: 0.3s;
+  background-color: #3498db;
+}
+
+.btn--blue:hover {
+  background-color: rgb(19, 54, 121);
+}
+
+
+  
