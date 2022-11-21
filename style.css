@@ -10,7 +10,7 @@
 }
 
 body{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -23,7 +23,7 @@ body{
     border: solid #ffffff;
     border-radius: 20px;
 
-    width: 100%;
+    width: 130%;
     max-width: 900px;
     margin: 0 auto;
     color: rgb(255, 255, 255);
@@ -53,19 +53,99 @@ body{
     color: rgb(32, 90, 197);
 }
 
-.tamanho{
+.fundo{
+  position: relative;
+  background-color: #ffffff;
+  
+  align-items: center;
   text-align: center;
+  padding: 20px 20px 20px 30px;
+  height: 8vh;
+  width: 40vh;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  margin: 40px auto 0 auto;
+}
+.textoo{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin: -100px auto 0 auto;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+
+}
+.cont{
+  position: relative;
+  height: 40px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  
+  margin-right: 13px;
+  
+}
+.cont input{
+  position: absolute;
+  height: 15px;
+  width: 85%;
+  -webkit-appearance: none;
+  outline: none;
+  background: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
+  
+}
+.cont input::-moz-range-progress{
+  height: 10px;
+  border-radius: 25px;
+  background-color: #0061cf;
 }
 
-.box{
+
+.cont input::-moz-range-thumb{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 4px solid #0061cf;
+  background: white;
+}
+.valoranger{
+  position: absolute;
+  font-size: 30px;
+  color: #0061cf;
+  font-weight: 800;
+  font-family: sans-serif;
+  width: 55px;
   
-  border: solid rgb(255, 0, 0);
+  text-align: center;
+  right: 0px;
+  top: -3px;
+  left: 10em;
+
+  margin: 0 -20px 0 auto;
+}
+
+
+
+.box{
+
+  /* border: solid rgb(255, 0, 0); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 95vh;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
+  
 }
 
 input[type="checkbox"]{
@@ -106,34 +186,35 @@ input:checked[type="checkbox"]:before{
 }
 
 .opaco{
-  
+
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: rgba(23, 64, 141, 0.514);
   box-shadow: 0px 0px 3px .2px rgba(0, 0, 0, 0.50);
   border-radius: 15px;
-  width: 300px;
+  width: 320px;
   height: 50px;
 }
 
 input[type="checkbox"]{
   position: absolute;
   right: 5px;
-  top: 9px;
+  top: 12px;
 }
 
 .texto{
   font-weight: 700;
   position: absolute;
-  top: 10px;
+  top: 15px;
   left: 10px;
 }
 
 .content {
   
-  border: solid rgb(255, 0, 0);
+  /* border: solid rgb(255, 0, 0); */
 
     position: relative;
     display: flex;
@@ -182,7 +263,7 @@ input[type="number"] {
 }
 
 .btn--green:hover {
-  background-color: #0c5229;
+  background-color: #0c5229d5;
 }
 
 .btn--blue {
